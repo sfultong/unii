@@ -1,0 +1,31 @@
+:root {
+  --bg: #fbfbf9;
+  --fg: #1f2328;
+  --muted: #59636e;
+  --link: #0b5cad;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16181c;
+    --fg: #e6e6e3;
+    --muted: #9aa1a9;
+    --link: #7fb6f5;
+  }
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.6 system-ui, sans-serif;
+}
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 3rem 16px;
+}
+h1 { font-size: 1.8rem; margin: 0 0 1rem; }
+h2 { font-size: 1.15rem; margin: 2rem 0 0.5rem; }
+a { color: var(--link); }
+code { font-size: 0.9em; }
+.date { color: var(--muted); margin-top: -0.5rem; }
